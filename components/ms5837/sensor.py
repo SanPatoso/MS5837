@@ -18,8 +18,7 @@ DEPENDENCIES = ['i2c']
 
 # Namespace de nuestro componente
 ms5837_ns = cg.esphome_ns.namespace('ms5837')
-MS5837Component = ms5837_ns.class_(
-    'MS5837Component', cg.PollingComponent, i2c.I2CDevice
+MS5837Component = ms5837_ns.class_('MS5837', cg.PollingComponent, i2c.I2CDevice
 )
 
 # Esquemas de sub-sensores
