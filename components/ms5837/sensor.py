@@ -46,7 +46,8 @@ CONFIG_SCHEMA = cv.Schema({
     i2c.i2c_device_schema(address=0x76)
 )
 
-# Generación de código\async def to_code(config):
+# Generación de código
+async def to_code(config):
     var = cg.new_Pvariable(config[CONF_ID], config.get(CONF_UPDATE_INTERVAL))
     await cg.register_component(var, config)
     await i2c.register_i2c_device(var, config)
