@@ -35,7 +35,7 @@ MS5837_PRESSURE_SCHEMA = sensor.sensor_schema(
     accuracy_decimals=2,
 )
 
-# Configuración que acepta YAML\
+# Configuración que acepta YAML
 CONFIG_SCHEMA = cv.Schema({
     cv.GenerateID(): cv.declare_id(MS5837Component),
     cv.Optional(CONF_UPDATE_INTERVAL): cv.update_interval,
