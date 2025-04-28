@@ -7,7 +7,7 @@
 namespace esphome {
 namespace ms5837 {
 
-class MS5837 : public PollingComponent, public i2c::I2CDevice {
+class MS5837 : public PollingComponent, public i2c::I2CDevice public MS5837_lib {
  public:
   Sensor *temperature_sensor_{nullptr};
   Sensor *pressure_sensor_{nullptr};
